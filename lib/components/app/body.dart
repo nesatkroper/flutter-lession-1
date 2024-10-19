@@ -6,9 +6,7 @@ class MyBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: const Center(
-          child: Text("data", style: TextStyle(color: Colors.yellow))),
-      decoration: BoxDecoration(boxShadow: [BoxShadow()]),
+      child: const Text("data"),
     );
   }
 }

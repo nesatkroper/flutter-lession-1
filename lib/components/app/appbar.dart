@@ -9,11 +9,12 @@ class OurAppBar extends StatelessWidget {
       title: const Text("appName"),
       backgroundColor: Colors.yellow,
       actions: <Widget>[
-        IconButton(onPressed: () => {}, icon: Icon(Icons.notification_add)),
-        IconButton(onPressed: () => {}, icon: Icon(Icons.settings))
+        IconButton(
+            onPressed: () => {}, icon: const Icon(Icons.notification_add)),
+        IconButton(onPressed: () => {}, icon: const Icon(Icons.settings))
       ],
       elevation: 50,
-      leading: Icon(Icons.menu),
+      leading: const Icon(Icons.menu),
     );
   }
 }
