@@ -47,18 +47,27 @@ class _HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(appName),
-        backgroundColor: Colors.yellow,
+        title: Text(
+          appName,
+          style: const TextStyle(color: Colors.white),
+        ),
+        backgroundColor: const Color.fromARGB(255, 107, 98, 75),
         actions: <Widget>[
           IconButton(
-              onPressed: () => {}, icon: const Icon(Icons.notification_add)),
-          IconButton(onPressed: () => {}, icon: const Icon(Icons.settings))
+              onPressed: () => {},
+              icon: const Icon(
+                Icons.notification_add,
+                color: Colors.white,
+              )),
         ],
         elevation: 50,
         leading: Builder(builder: (context) {
           return IconButton(
               onPressed: () => {Scaffold.of(context).openDrawer()},
-              icon: const Icon(Icons.menu));
+              icon: const Icon(
+                Icons.menu,
+                color: Colors.white,
+              ));
         }),
       ),
       drawer: const MyDrawer(),
