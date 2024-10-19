@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lession_1/screen/homepage.dart';
-// import 'package:lession_1/pages/auth/login_page.dart';
-// import 'package:lession_1/theme/theme_provider.dart';
-// import 'package:provider/provider.dart';
+import 'package:lession_1/screen/auth/register_page.dart';
+// import 'package:lession_1/screen/auth/login_page.dart';
+// import 'package:lession_1/screen/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -16,8 +15,7 @@ class MyApp extends StatelessWidget {
     return const MaterialApp(
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
-      // theme: Provider.of<ThemeProvider>(context).themeData,
-      home: HomePage(),
+      home: RegisterPage(),
     );
   }
 }

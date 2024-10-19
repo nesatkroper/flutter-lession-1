@@ -6,7 +6,7 @@ class MyBody extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      child: const Text("data"),
+      child: const Text("data from body"),
     );
   }
 }
